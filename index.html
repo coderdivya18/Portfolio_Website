@@ -4,10 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="assets/images/ProfileImg.jpg" as="image">
+    <link rel="preload" href="assets/images/image-mask.svg" as="image">
     <title>Divya - Frontend Developer</title>
 </head>
-<body>
 
+<body>
+<!--Header Section-->
+<header class="header">
+    <div class="container">
+        <a href="#" class="logo">Divya</a>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+                <a href="#" class="logo">Divya</a>
+                <button class="navbar-close-btn" data-nav-toggler>
+                    <i class="fa-solid fa-xmark fa-2x"  style="color: #fdff00"></i>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="" class="navbar-link">Home</a></li>
+                <li><a href="" class="navbar-link">About</a></li>
+                <li><a href="" class="navbar-link">Projects</a></li>
+                <li><a href="" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="theme-wrapper">
+                <button id="theme-btn" class="btn theme">Change Theme</button>
+            </div>
+        </nav>
+        <button class="navbar-toggler nav-open-btn" data-nav-toggler>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+</header>
+
+<!--Hero Section-->
+<main>
+    <article>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="h1 title">Hi, I'm Divya. Front End Web Developer</h1>
+                    <p class="section-text">I’m a frontend web developer with a love for clean code, creativity, and
+                        intuitive user experiences. I’m currently building projects to sharpen my
+                        skills and grow my portfolio.</p>
+                    <div class="social-icons-wrapper">
+                        <a href="https://github.com/coderdivya18" class="social-icon"  style="color: #02e9cf">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" style="color: #f3b500">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon" style="color: #ea07b9">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" style="color: #ef7816">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="btn-wrapper">
+                         <button class="btn">Explore My Works</button>
+                         <button class="btn">Contact Me</button>
+                   </div>
+                    <figure class="hero-banner">
+                        <img src="assets/images/ProfileImg.jpg" alt="Divya's_photo" width="560" height="560" class="w-100">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
