@@ -38,6 +38,7 @@ button{
 html{
     font-size: 10px;
     scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
 }
 
 body{
@@ -45,6 +46,29 @@ body{
     font-size: 1.6rem;
     color: #fdff00;
     line-height: 1.7;
+}
+
+body.black-theme{
+    background-color: #171717;
+
+}
+
+body.blue-theme{
+    background-color: #5e2991;
+
+}
+
+body.violet-theme{
+    background-color: #0a2d74;
+
+}
+
+.divider[data-theme="violet"], .divider[data-theme="blue"]{
+    background-color: #000;
+}
+
+.divider[data-theme="black"]{
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -330,7 +354,7 @@ p{
 }
 
 .about-card .card-text{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* End of About Section*/
